@@ -1,0 +1,203 @@
+Estilos iniciales:
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input, button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    cursor: pointer;
+    background: #38bdf8;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #0ea5e9;
+}
+
+#listaReservas {
+    margin-top: 20px;
+    display: grid;
+    gap: 10px;
+}
+
+.reserva {
+    background: #334155;
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.reserva button {
+    background: red;
+    color: white;
+    margin-top: 10px;
+}
+
+Estilos mejor:
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1f2937;
+}
+
+.container {
+  width: 200%;
+  height : 200%;
+  max-width: 420px;
+  padding: 24px;
+}
+
+#loginBox,
+#app {
+  width: 150%;
+  height: 500%;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+  border: 1px solid #e5e7eb;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+  color: #111827;
+}
+
+p {
+  color: #6b7280;
+}
+
+input {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 10px 0;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background: #f8fafc;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+input:focus {
+  border-color: #1d4ed8;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.12);
+}
+
+button {
+  width: 100%;
+  padding: 12px 14px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #1d4ed8;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background: #1e40af;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+#loginError {
+  color: #dc2626;
+  min-height: 20px;
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+#welcome {
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 18px;
+}
+
+.form {
+  display: grid;
+  gap: 10px;
+  margin: 18px 0;
+  height:100%;
+  width:100%;
+}
+
+#adminPanel {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-left: 5px solid #2563eb;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 18px;
+}
+
+#reservas {
+  display: grid;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+#reservas > div {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 14px;
+  color: #374151;
+}
+
+#reservas > div strong {
+  color: #111827;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 14px;
+  }
+
+  #loginBox,
+  #app {
+    padding: 20px;
+    border-radius: 14px;
+  }
+}

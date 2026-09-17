@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Reservas Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Sistema de Reservas</h1>
+
+    <div class="form">
+
+        <input type="text" id="nombre" placeholder="Nombre del cliente">
+        <input type="date" id="fecha">
+        <input type="time" id="hora">
+        <input type="number" id="personas" placeholder="Número de personas">
+
+        <button onclick="crearReserva()">Crear Reserva</button>
+        <button onclick="borrarTodas()">Borrar Todo</button>
+
+        <p id="error"></p>
+
+    </div>
+
+    <div id="listaReservas"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

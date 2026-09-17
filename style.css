@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input, button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    cursor: pointer;
+    background: #38bdf8;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #0ea5e9;
+}
+
+#listaReservas {
+    margin-top: 20px;
+    display: grid;
+    gap: 10px;
+}
+
+.reserva {
+    background: #334155;
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.reserva button {
+    background: red;
+    color: white;
+    margin-top: 10px;
+}
